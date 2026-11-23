@@ -1,0 +1,8 @@
+Put the SpearFishing Assets Pack here.
+
+1. Download the pack (https://nszym.itch.io/spearfishing-assets-pack) and unzip it.
+2. Copy its "Sprites" folder into this "assets" folder, so you have assets/Sprites/Diver-32x32/...
+3. Copy its "Licence.txt" into this "assets" folder too.
+
+The pack's licence does not allow anyone to share its pictures, so this project comes without them.
+Your own copy stays in your own project.

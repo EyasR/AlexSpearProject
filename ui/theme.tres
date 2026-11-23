@@ -1,0 +1,106 @@
+[gd_resource type="Theme" format=3]
+
+[ext_resource type="FontFile" path="res://assets/made_here/pixel_font.png" id="1_font"]
+[ext_resource type="Texture2D" path="res://assets/Sprites/UI/UI-Buttons.png" id="2_buttons"]
+[ext_resource type="Texture2D" path="res://assets/Sprites/UI/UI-Slider.png" id="3_slider"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBox_normal"]
+texture = ExtResource("2_buttons")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+content_margin_left = 3.0
+content_margin_top = 2.0
+content_margin_right = 3.0
+content_margin_bottom = 2.0
+region_rect = Rect2(2, 4, 28, 24)
+
+[sub_resource type="StyleBoxTexture" id="StyleBox_hover"]
+texture = ExtResource("2_buttons")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+content_margin_left = 3.0
+content_margin_top = 2.0
+content_margin_right = 3.0
+content_margin_bottom = 2.0
+region_rect = Rect2(82, 4, 28, 24)
+
+[sub_resource type="StyleBoxTexture" id="StyleBox_pressed"]
+texture = ExtResource("2_buttons")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+content_margin_left = 3.0
+content_margin_top = 2.0
+content_margin_right = 3.0
+content_margin_bottom = 2.0
+region_rect = Rect2(162, 4, 28, 24)
+
+[sub_resource type="StyleBoxTexture" id="StyleBox_disabled"]
+texture = ExtResource("2_buttons")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+content_margin_left = 3.0
+content_margin_top = 2.0
+content_margin_right = 3.0
+content_margin_bottom = 2.0
+modulate_color = Color(0.45, 0.45, 0.55, 1)
+region_rect = Rect2(2, 4, 28, 24)
+
+[sub_resource type="StyleBoxTexture" id="StyleBox_panel"]
+texture = ExtResource("2_buttons")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+content_margin_left = 6.0
+content_margin_top = 5.0
+content_margin_right = 6.0
+content_margin_bottom = 4.0
+region_rect = Rect2(2, 4, 28, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_grabber"]
+atlas = ExtResource("3_slider")
+region = Rect2(6, 20, 10, 7)
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_slider"]
+content_margin_top = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.16, 0.2, 0.41, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 0.88, 0.57, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_slider_fill"]
+content_margin_top = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.31, 0.73, 0.92, 1)
+
+[resource]
+default_font = ExtResource("1_font")
+default_font_size = 10
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_disabled_color = Color(0.6, 0.6, 0.7, 1)
+Button/colors/icon_disabled_color = Color(0.2, 0.2, 0.3, 0.8)
+Button/styles/disabled = SubResource("StyleBox_disabled")
+Button/styles/focus = SubResource("StyleBox_hover")
+Button/styles/hover = SubResource("StyleBox_hover")
+Button/styles/normal = SubResource("StyleBox_normal")
+Button/styles/pressed = SubResource("StyleBox_pressed")
+Label/colors/font_shadow_color = Color(0.05, 0.08, 0.2, 0.75)
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+PanelContainer/styles/panel = SubResource("StyleBox_panel")
+HSlider/icons/grabber = SubResource("AtlasTexture_grabber")
+HSlider/icons/grabber_highlight = SubResource("AtlasTexture_grabber")
+HSlider/styles/grabber_area = SubResource("StyleBox_slider_fill")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBox_slider_fill")
+HSlider/styles/slider = SubResource("StyleBox_slider")
